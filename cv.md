@@ -1,5 +1,5 @@
 ___
->#Not much about myself... 
+>Not much about myself... 
 ___
 ## Name: 
 Ludmila Kulchitskaya
