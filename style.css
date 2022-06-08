@@ -1,4 +1,58 @@
-h1 {
-    color:brown;
-    font-size: 18px;
+html {
+  scroll-behavior: smooth;  
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.container {   
+  display: flex; 
+  flex-flow: row wrap;
+}
+section {
+  position: relative;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.logo {
+  border-radius: 50px;
+  display:block;
+  margin:auto;
+}
+.main_info {
+  display: inline-block;
+  background-color: rgb(209, 177, 177);
+}
+
+.other_info {
+  position: relative;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  background-color: rgb(209, 177, 177);
+  margin: 0;
+}
+.nav-item {
+  padding: 5px;
+  margin: 5px;
+  border: 1;
+}
+
+p {
+  padding-left: 15px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(209, 177, 177);
 }

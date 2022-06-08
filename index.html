@@ -4,14 +4,16 @@
 <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>cv</title>
 </head>
-<body>
-  <header class = "header">
-    <h1>This my first page</h1>
-    <nav class="nav">
+<body id="hhome">
+  <header class = "header">   
+    <nav class="nav" >
       <ul class="nav-list">        
+        <li class="nav-item"><a href="#hhome" class="nav-link" title="Up">&#x25B2;</a></li>    
         <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>        
         <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
         <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
@@ -24,22 +26,30 @@
     </nav>
 </header>
 <main class="container">
-  <section class="section" id="profile">
-    <h1>Ludmila Kulchitskaya</h1>
-    <figure>
-      <img src="./img/ava.png" alt="avatar Ludmila Kulchitskaya" width="150px">
-    </figure>
+  <div class="main_info">
+    <section class="section" id="profile">
+      <h1>Ludmila Kulchitskaya</h1>
+      <h5>Junior Front-end Developer</h5>
+      <figure>
+        <img class="logo" src="./img/ava.png" alt="avatar Ludmila Kulchitskaya" width="150px">
+      </figure>
+      <hr>
+    </section>
+    <section class="section" id="contacts"> 
+      <h2>Contacts: </h2>
+      <ul>
+        <li> Russia, Saint-Petersburg</li>
+        <li> &#9993; <a href="mailto:milasasha@gmail.com">milasasha@gmail.com</a> </li>
+        <li> Discord Миа#4325 </li>
+        <li> GitHub <a href="https://github.com/Motoblock"> Motoblock </a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="other_info">
+  <section class="section" id="summary">
+    <h2> About me </h2>
+    <p>I like programming and kats ;)</p>
   </section>
-  <section class="section" id="contacts"> 
-    <h2>Contacts: </h2>
-    <ul>
-      <li>Country Russia, Saint-Petersburg</li>
-      <li> &#9993; milasasha@gmail.com </li>
-      <li> Discord Миа#4325 </li>
-      <li> [GitHub](https://github.com/Motoblock) Motoblock</li>
-    </ul>
-  </section>
-  <section class="section" id="summary"> </section>
 
   <section class="section" id="skills">
     <h2> Skills: </h2>
@@ -84,9 +94,14 @@
     <h2>Languages</h2> 
     <p>English B2 </p>
   </section>
+  </div>
 </main>
 <footer>
-
+  <p>
+    <a class="footer__github" href="https://github.com/Motoblock" target="_blank">My GitHub</a>
+  </p>
+  <p>2022</p>
+  <p><a href="https://rs.school/js/"><img src="./img/logo-rsschool3.png" alt="logo rs_school" width="83px"></a></p>
 </footer>
 </body>
 </html>
