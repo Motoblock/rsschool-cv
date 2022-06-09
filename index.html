@@ -7,52 +7,59 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.ico">
   <title>cv</title>
 </head>
 <body id="hhome">
-  <header class = "header">   
-    <nav class="nav" >
-      <ul class="nav-list">        
-        <li class="nav-item"><a href="#hhome" class="nav-link" title="Up">&#x25B2;</a></li>    
-        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>        
-        <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
-        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
-        <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-        <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+  <header class = "header">
+   
+    <nav class="nav">
+      <input id="toggle" type="checkbox">
+      <label class="toggle_container" for="toggle">
+        <span></span>
+      </label>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#hhome" class="nav_link" title="Up">&#x25B2;</a></li>
+        <li class="nav-item"><a href="#contacts" class="nav_link">Contacts</a></li>
+        <li class="nav-item"><a href="#summary" class="nav_link">About me</a></li>
+        <li class="nav-item"><a href="#skills" class="nav_link">Skills</a></li>
+        <li class="nav-item"><a href="#code" class="nav_link">Code</a></li>
+        <li class="nav-item"><a href="#courses" class="nav_link">Courses</a></li>
+        <li class="nav-item"><a href="#projects" class="nav_link">Projects</a></li>
+        <li class="nav-item"><a href="#education" class="nav_link">Education</a></li>
+        <li class="nav-item"><a href="#languages" class="nav_link">Languages</a></li>
       </ul>
     </nav>
 </header>
 <main class="container">
-  <div class="main_info">
+  <aside class="main_info">
+    <h1>Ludmila Kulchitskaya</h1>
     <section class="section" id="profile">
-      <h1>Ludmila Kulchitskaya</h1>
       <h5>Junior Front-end Developer</h5>
       <figure>
-        <img class="logo" src="./img/ava.png" alt="avatar Ludmila Kulchitskaya" width="150px">
+        <img class="logo" src="./img/ava.png" alt="avatar Ludmila Kulchitskaya" width="150">
       </figure>
       <hr>
     </section>
-    <section class="section" id="contacts"> 
-      <h2>Contacts: </h2>
+    <section class="section" id="contacts">
+      <h2>Contacts</h2>
       <ul>
         <li> Russia, Saint-Petersburg</li>
         <li> &#9993; <a href="mailto:milasasha@gmail.com">milasasha@gmail.com</a> </li>
         <li> Discord Миа#4325 </li>
-        <li> GitHub <a href="https://github.com/Motoblock"> Motoblock </a></li>
+        <li> GitHub <a href="https://github.com/Motoblock"><b>Motoblock</b></a></li>
       </ul>
     </section>
-  </div>
+  </aside>
   <div class="other_info">
   <section class="section" id="summary">
-    <h2> About me </h2>
-    <p>I like programming and kats ;)</p>
+    <h2>About me </h2>
+    <p>I like programming and cats ;) I want to learn JavaScript.</p>
+    <p>Experience in developing personal accounts in the field of education. Creating Olympiad websites in PHP.</p>
   </section>
 
   <section class="section" id="skills">
-    <h2> Skills: </h2>
+    <h2> Skills </h2>
     <ul>
       <li> HTML&CSS</li>
       <li> JavaScript (Fundamentals, Functional Programming)</li>
@@ -62,46 +69,37 @@
       <li> Arduino (basic)</li>
     </ul>
   </section>
-  <section class="section" id="code"> 
-    <h2>Пример кода</h2>
+  <section class="section" id="code">
+    <h2>Сode example</h2>
     <pre>
-      <code>
         function multiply(a, b){
           return a * b;
         }
-      </code>
     </pre>
   </section>
-  <section class="section" id="courses"> 
-    <h2>Курсы</h2>
-    <ul>
-      <li>Stepik, 2022 <a href="https://stepik.org/cert/1492974">sert.</a>
-      <ul>
-        <li> JavaScript for beginners</li>
-      </ul>
-      </li>
-    </ul>
+  <section class="section" id="courses">
+    <h2>Courses</h2>
+    <p>Stepik, 2022 <a href="https://stepik.org/cert/1492974">sert.</a> (JavaScript for beginners) </p>
   </section>
-  <section class="section" id="projects"> 
-    <h2>Выполненные проекты</h2>
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <p><a href="https://motoblock.github.io/rsschool-cv/" target="_blank">CV#1. Markdown & Git</a></p>
+    <p><a href="https://motoblock.github.io/rsschool-cv/cv" target="_blank">CV#2. HTML, CSS & Git Basics</a></p>
   </section>
-  <section class="section" id="education"> 
-    <h2>Образование</h2>
-    <p>North-Western State Technical University, 2002
-      - Faculty of Computing Complexes, Systems and Networks  </p>
+  <section class="section" id="education">
+    <h2>Education</h2>
+    <p>North-Western State Technical University, 2002 <br>- Faculty of Computing Complexes, Systems and Networks</p>
   </section>
   <section class="section" id="languages">
-    <h2>Languages</h2> 
+    <h2>Languages</h2>
     <p>English B2 </p>
   </section>
   </div>
 </main>
 <footer>
-  <p>
-    <a class="footer__github" href="https://github.com/Motoblock" target="_blank">My GitHub</a>
-  </p>
+  <p><a class="footer__github" href="https://github.com/Motoblock" target="_blank">My GitHub</a></p>
   <p>2022</p>
-  <p><a href="https://rs.school/js/"><img src="./img/logo-rsschool3.png" alt="logo rs_school" width="83px"></a></p>
+  <p><a href="https://rs.school/js/" target="_blank"><img src="./img/logo-rsschool3.png" alt="logo rs_school" width="83"></a></p>
 </footer>
 </body>
 </html>
