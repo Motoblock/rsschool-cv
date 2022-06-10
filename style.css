@@ -191,15 +191,12 @@ nav {
   .nav-item {
     display: block;
     padding: 12px 24px;
-    color: #333;
-    /*font-family: 'Roboto', sans-serif;*/
+    color: #333;   
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
   }
-  /*.nav-item:hover {
-    background-color: #CFD8DC;
-  }*/
+
   #toggle:checked ~ .toggle_container > span {
     transform: rotate(45deg);
   }
@@ -215,11 +212,10 @@ nav {
     visibility: visible;
     left: 0;
   }
-
   .toggle_container > span,
   .toggle_container > span::before,
   .toggle_container > span::after {
-  transition-duration: .25s;
+    transition-duration: .25s;
   }
   .nav-list {
     transition-duration: .25s;
@@ -227,15 +223,7 @@ nav {
   .nav-itemm {
     transition-duration: .25s;
   }
-
 }
-
-
-
-
-/*.nav_link:visited {
-  color: darkred;
-}*/
 
 /***************************************************
 *end menu
