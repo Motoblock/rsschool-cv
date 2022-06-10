@@ -139,9 +139,9 @@ nav {
 }
 
 @media screen and (max-width: 550px) {
-   .header{
-    	position: relative;
-    }
+  .header{
+    	position: fixed;
+  }
   .toggle_container {
     display: flex;
     align-items: center;
@@ -151,6 +151,7 @@ nav {
     height: 26px;
     cursor: pointer;
     z-index: 1;
+    top: 7px;
   }
   /* добавляем "гамбургер" */
   .toggle_container > span,
@@ -175,7 +176,7 @@ nav {
     display: block;
     position: fixed;
     visibility: hidden;
-    top: 0;
+  /*  top: 0;*/
     left: -100%;
     width: 200px;
     height: 100%;
@@ -191,31 +192,45 @@ nav {
     display: block;
     padding: 12px 24px;
     color: #333;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
   }
-  .nav-item:hover {
+  /*.nav-item:hover {
     background-color: #CFD8DC;
+  }*/
+  #toggle:checked ~ .toggle_container > span {
+    transform: rotate(45deg);
+  }
+  #toggle:checked ~ .toggle_container > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #toggle:checked ~ .toggle_container > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #toggle:checked ~ .nav-list {
+    visibility: visible;
+    left: 0;
+  }
+
+  .toggle_container > span,
+  .toggle_container > span::before,
+  .toggle_container > span::after {
+  transition-duration: .25s;
+  }
+  .nav-list {
+    transition-duration: .25s;
+  }
+  .nav-itemm {
+    transition-duration: .25s;
   }
 
 }
-#toggle:checked ~ .toggle_container > span {
-  transform: rotate(45deg);
-}
-#toggle:checked ~ .toggle_container > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#toggle:checked ~ .toggle_container > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#toggle:checked ~ .nav-list {
-  visibility: visible;
-  left: 0;
-}
+
+
 
 
 /*.nav_link:visited {
