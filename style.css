@@ -50,6 +50,7 @@ a {
 .main_info {
   border-radius: 10px 10px;
   background-color: var(--backgroundcolor);
+  margin: 0 5px;
 }
 
 h1,h2 {
@@ -62,6 +63,9 @@ pre {
   max-width: 300px
 }
 
+#hhome {
+  margin: 0;
+}
 aside h1 {
   text-align: center;
 }
@@ -127,7 +131,7 @@ nav {
   transition: .3s;
 }
 
-.nav_link:hover {
+.nav_link:hover, .footer__github:hover {
 	background: linear-gradient(to left, var(--backgroundcolor), darkred 100%);
 	background-position: 0 100%;
 	background-size: 100% 2px;
