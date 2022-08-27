@@ -8,11 +8,12 @@ html {
 }
 
 * {
-    box-sizing: border-box;		
+    box-sizing: border-box;
+    margin: 0px;
   }
 
 p {
-  padding-left: 15px;
+  margin: 15px;
 }
 
 a {
@@ -24,16 +25,19 @@ a {
   top: 0;
   z-index: 50;
   max-width: 1500px;
-  margin: auto;
+  margin: 0 5px;
 }
 
 .container {
   display: flex;
-  flex-flow: row nowrap;
-  margin: 40px auto;
+  /* flex-flow: row nowrap; */
+  margin: 40px 5px;
   max-width: 1400px;
 }
 
+.contacts-ul {
+  padding: 10px;
+}
 @media screen and (max-width: 550px) {
   .container {
     flex-flow: row wrap;
@@ -50,7 +54,7 @@ a {
 .main_info {
   border-radius: 10px 10px;
   background-color: var(--backgroundcolor);
-  margin: 0 5px;
+  margin: 5px;
 }
 
 h1,h2 {
@@ -60,7 +64,7 @@ h1,h2 {
 pre {
   background-color: floralwhite;
   box-shadow: 7px 7px 5px 5px rgb(0 0 0 / 20%);
-  max-width: 300px
+  max-width: 450px
 }
 
 #hhome {
@@ -68,6 +72,7 @@ pre {
 }
 aside h1 {
   text-align: center;
+  margin: 5px;
 }
 
 .other_info h2{
@@ -85,7 +90,7 @@ section {
   position: relative;
   padding: 0 20px;
   margin-bottom: 20px;
-  word-wrap: break-word;
+  /* word-wrap: break-word; */
 }
 
 #profile h5 {
