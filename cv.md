@@ -35,6 +35,8 @@ function solution(number){
   - Faculty of Computing Complexes, Systems and Networks  
 - [Stepik, 2022](https://stepik.org/cert/1492974)
   - JS for beginners
+- [RS School](https://app.rs.school/certificate/642pig0k)
+  - JS/FE Pre-Scholl 2022q2 (JavaScript)
 ## Experience: 
 - Development of personal accounts of the applicant, student, graduate, employee
 - Website of the educational institution
