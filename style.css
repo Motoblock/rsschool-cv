@@ -217,15 +217,10 @@
   color: darkred;
   transition: 0.3s;
 }
-
-/**********************
-*begin section
-***********************/
-#projects a {
+.container .other_info .section #projects a {
   color: darkred;
 }
-
-#projects a:hover {
+.container .other_info .section #projects a:hover {
   color: rgb(49, 21, 21);
 }
 

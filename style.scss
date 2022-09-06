@@ -71,7 +71,7 @@ $mobil: 390px;
       .nav-item {
         display: block;
         padding: 12px 24px;
-        color: #333;   
+        color: #333;
         font-size: 20px;
         font-weight: 600;
         text-decoration: none;
@@ -181,7 +181,7 @@ $mobil: 390px;
       text-align: center;
       margin-top: 0px;
     }
-   
+
     .logo {
       border-radius: 60px;
       display:block;
@@ -195,7 +195,6 @@ $mobil: 390px;
     }
   }
 
-    
   }
   .other_info {
     margin-left: 20px;
@@ -218,24 +217,14 @@ $mobil: 390px;
       a {
         @include  link();
       }
+      #projects a {
+        color: darkred;
+        &:hover { color: rgb(49, 21, 21);}
+      }
     }
   }
 }
 
-
-
-/**********************
-*begin section
-***********************/
-
-
-#projects a {
-  color: darkred;
-}
-
-#projects a:hover {
-  color: rgb(49, 21, 21);
-}
 
 // @media screen and (max-width: 550px) {
 
@@ -291,7 +280,7 @@ $mobil: 390px;
 //   .nav-item {
 //     display: block;
 //     padding: 12px 24px;
-//     color: #333;   
+//     color: #333;
 //     font-size: 20px;
 //     font-weight: 600;
 //     text-decoration: none;
@@ -324,8 +313,6 @@ $mobil: 390px;
 //     transition-duration: .25s;
 //   }
 // }
-
-
 
 footer {
   display: flex;
